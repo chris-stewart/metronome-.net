@@ -9,7 +9,7 @@ namespace metronome
     /// <summary>
     /// This class models the song, which is a linear ordering of sections.
     /// </summary>
-	class Song
+	public class Song
 	{
 		int currentSection; //current section that's playing.
 		int currentInterval; //current beat spacing in milliseconds, used with the timer.

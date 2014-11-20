@@ -11,14 +11,14 @@ namespace metronome
     /// Contains the information needed for a single beat, with adjustable frequency stuff for accented beats
     /// and whatnot.
     /// </summary>
-	class Beat
+	public class Beat
 	{
 		bool isAccent; //Accents are a higher pitch
 
         //following values all taken from the resources.resx file. More info on the options there.
-        int beepDuration = Convert.ToInt32(metronome.Properties.Resources.DEFAULT_BEEP_DURATION);
-        int frequency = Convert.ToInt32(metronome.Properties.Resources.DEFAULT_BEEP_FREQUENCY);
-        double multiplier = Convert.ToDouble(metronome.Properties.Resources.DEFAULT_BEEP_ACCENT_MULTIPLIER);
+        readonly int beepDuration = Convert.ToInt32(metronome.Properties.Resources.DEFAULT_BEEP_DURATION);
+        readonly int frequency = Convert.ToInt32(metronome.Properties.Resources.DEFAULT_BEEP_FREQUENCY);
+        readonly double multiplier = Convert.ToDouble(metronome.Properties.Resources.DEFAULT_BEEP_ACCENT_MULTIPLIER);
 
         /// <summary>
         /// Standard constructor to create a beat.

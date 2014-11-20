@@ -11,7 +11,7 @@ namespace metronome
     /// A section is a string of uniform measures. Typically a riff will be a uniform x measures of x time signature,
     /// so here we model a section as a chunk of measures sharing the same time signature and tempo.
     /// </summary>
-	class Section
+	public class Section
 	{
 		int timeSig; //upper value of a time signature.
 		int bpm; //Beats per minute for this section.
